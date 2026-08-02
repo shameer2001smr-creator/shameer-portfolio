@@ -5,7 +5,7 @@ import {ArrowDown, ArrowUpRight, Check, Mail, Sparkles} from 'lucide-react';
 import './styles.css';
 
 const services=[
-['01','Creative Direction','Concept Development · Visual Direction · Storytelling · Campaign Ideas · Content Planning'],
+['01','Digtal Creator','Concept Development · Visual Direction · Storytelling · Campaign Ideas · Content Planning'],
 ['02','Video Editing & Post-Production','Cinematic Editing · Reels & Shorts · Promotional Videos · Color Grading · Motion Graphics'],
 ['03','Digital Marketing','Social Media Strategy · Content Marketing · Campaign Planning · Audience Research · Brand Positioning'],
 ['04','Digital Content Creation','Social Media Creatives · Posters · Promotional Content · Reels · Short-form Content'],
@@ -32,6 +32,7 @@ function App(){
   <section className="section dark"><motion.div {...reveal}><p className="kicker">Why Work With Me</p><h2>Creativity + strategy + technology.</h2><div className="features">{['Strong Concepts','Premium Visual Quality','Purposeful Content','Modern Creative Workflow','End-to-End Execution'].map(x=><div key={x}><Check/><span>{x}</span></div>)}</div><div className="tools"><small>TOOLS & CREATIVE WORKFLOW</small><div>{tools.map(x=><span key={x}>{x}</span>)}</div></div></motion.div></section>
   <section className="quote"><motion.blockquote {...reveal}>"I don't just create content.<br/><em>I transform ideas into digital experiences.</em>"</motion.blockquote></section>
   <section id="contact" className="contact"><motion.div {...reveal}><p className="kicker">Available for new projects</p><h2>Let's Create<br/>Something Great.</h2><p>Have an idea, brand or project? Let's turn it into something people remember.</p><a className="primary" href="mailto:shameer2001smr@gmail.com"><Mail size={18}/> Start a Conversation</a><div className="contactInfo"><a href="mailto:shameer2001smr@gmail.com">shameer2001smr@gmail.com</a><a href="tel:+916383458200">+91 63834 58200</a></div><div className="availability">{['Freelance Projects','Brand Collaborations','Creative Direction','Video Editing','Digital Marketing'].map(x=><span key={x}>{x}</span>)}</div><footer><b>B. Muhammad Shameer</b><span>Digital Creator · Creative Director · Video Editor · Freelancer</span><small>© 2026 Shameer. Crafted with purpose.</small></footer></motion.div></section>
- </main>
+ </main> 
+ <img src="/work1.jpg" alt="My work" style={{width:'100%',borderRadius:'20px'}}/>
 }
 createRoot(document.getElementById('root')).render(<App/>);
